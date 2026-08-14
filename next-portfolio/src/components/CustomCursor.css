@@ -26,7 +26,7 @@
       It's a perfectly circular radial gradient sitting exactly on the page plane,
       behind the text (z-index 9999 is above text, but with mix-blend-mode it acts like light).
     */
-    background: radial-gradient(circle, rgba(6, 182, 212, 0.6) 0%, rgba(139, 92, 246, 0.2) 30%, transparent 70%);
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.3) 0%, rgba(139, 92, 246, 0.1) 30%, transparent 70%);
     mix-blend-mode: screen;
     z-index: 9999;
     filter: blur(15px);
