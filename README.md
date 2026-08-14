@@ -7,27 +7,37 @@ This repository contains the source code for my highly interactive, 3D-animated,
 
 ---
 
-## 🛸 Want this portfolio for yourself? Steal it! 
+## 🛸 Want this portfolio for yourself? Steal it with AI! 
 
-I've built this portfolio to be easily customizable. If you love the extreme animations, the UFO tractor-beam cursor, and the slick UI, you can fork this repository and make it your own in just a few minutes! 
+I've built this portfolio to be easily customizable. Since we are in the era of AI, you don't even need to manually edit the code to make it your own! 
 
-### 🛠️ How to Customize & Deploy Your Own
+### 🤖 The 1-Click AI Customization Guide
 
 **Step 1: Fork the Repository**
-Click that shiny **Fork** button at the top right of this page to copy this code into your own GitHub account!
+Click that shiny **Fork** button at the top right of this page to copy this code into your own GitHub account.
 
-**Step 2: Swap the Profile Image**
-Delete my face (I won't be offended 😂) and replace it with your own!
-1. Get a square photo of yourself.
-2. Go to `next-portfolio/public/` and replace `profile.png`. 
-*(Pro-tip: If you want a perfect circle, use a PNG with a transparent background!)*
+**Step 2: Unleash Your AI Agent**
+Open the repository in your favorite AI coding assistant (like Cursor, GitHub Copilot, or Gemini).
 
-**Step 3: Update the Content**
-Open the `next-portfolio/src/components/` folder. This is where the magic happens! Just replace my text with your own details:
-- 🦸‍♂️ `Hero.jsx`: Update your name, title, and social links!
-- 🧰 `Projects.jsx`: Show off your own masterpieces.
-- 🚀 `Experience.jsx`: List your incredible work history.
-- 📧 `Contact.jsx`: Add your email address or contact form logic.
+**Step 3: Copy & Paste This Prompt**
+Just give your AI agent the following prompt, fill in your details, and watch it rewrite the entire portfolio for you!
+
+```text
+Hey Agent! I just forked this Next.js portfolio and I want to make it mine. 
+Please scan the components in `next-portfolio/src/components/` (specifically Hero.jsx, Projects.jsx, Experience.jsx, and Contact.jsx) and replace all of Sathvik Kunuru's information with my own.
+
+Here are my details:
+- Name: [Your Name]
+- Title: [Your Job Title]
+- Tagline: [A short sentence about what you do]
+- GitHub URL: [Your GitHub Link]
+- LinkedIn URL: [Your LinkedIn Link]
+- About Me: [A short paragraph about your skills and goals]
+
+Also, I have placed a picture of myself in `next-portfolio/public/profile.png`. Please make sure the Hero section and favicon use this image. 
+
+Finally, please remove the `basePath` from `next.config.mjs` if it exists, and help me push the code to my repo!
+```
 
 **Step 4: Go Live on GitHub Pages!**
 Deploying is fully automated. 
