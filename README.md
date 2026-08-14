@@ -2,7 +2,7 @@
 
 This is the source code for my personal portfolio website! 
 
-✨ **Have a look at it live right here:** [https://SathvikKunuru.github.io](https://SathvikKunuru.github.io) ✨
+✨ **Have a look at it live right here:** <a href="https://SathvikKunuru.github.io" target="_blank">https://SathvikKunuru.github.io</a> ✨
 
 ---
 
@@ -12,7 +12,7 @@ If you like the design and want to use it for yourself, it's super easy. Just co
 
 ### 🤖 Give this prompt to your Agent:
 
-> Hey Agent! I want to build my own portfolio website based on an awesome template. 
+> Hey [Agent Name]! I want to build my own portfolio website based on an awesome template. 
 > 
 > Please perform the following actions sequentially:
 > 
