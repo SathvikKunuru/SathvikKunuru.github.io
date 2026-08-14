@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sathvik Kunuru - Embedded Engineer & AI/ML Enthusiast Portfolio">
+    <title>Sathvik Kunuru | Portfolio</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-glow top-left"></div>
+    <div class="bg-glow bottom-right"></div>
+    <div class="bg-glow middle-cyan"></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Sathvik<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <a href="#contact" class="btn-primary nav-cta">Let's Talk</a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content fade-in-up">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="glitch" data-text="Sathvik Kunuru">Sathvik Kunuru</h1>
+                <h2 class="subtitle">Embedded Engineer <span class="highlight">&</span> AI/ML Specialist</h2>
+                <p class="description">
+                    Bridging the gap between hardware and intelligent software. 
+                    I build distributed embedded systems, implement deep learning on the edge, 
+                    and optimize intelligent automation solutions.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/SathvikKunuru" target="_blank" class="btn-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sathvik-kunuru" target="_blank" class="btn-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-header fade-in">
+                <h2>Work Experience</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item slide-in-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">04/2025 – Present</span>
+                        <h3>Embedded Engineer</h3>
+                        <h4>Smarttrak AI</h4>
+                        <ul>
+                            <li>Implemented and distributed solar tracker firmware (STM32, Zephyr RTOS, ESP32, RAK) with MQTT, UART, LoRa for seamless remote control and monitoring.</li>
+                            <li>Engineered intelligent motor and sensor systems using I²C, SPI, UART enabling automated mode switching and real-time analytics.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item slide-in-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">06/2024 – 01/2025</span>
+                        <h3>R&D Engineer</h3>
+                        <h4>Visor Technologies</h4>
+                        <ul>
+                            <li>Engineered embedded systems (I2C, Ethernet, UWB, Qt, CAN, RS485) for 50% faster industrial automation, exceeding project goals.</li>
+                            <li>Implemented deep learning models for DRDO/BHEL, increasing efficiency/reliability by 90% through automation and predictive maintenance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item slide-in-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">06/2023 – 08/2023</span>
+                        <h3>Intern</h3>
+                        <h4>NIT Warangal</h4>
+                        <ul>
+                            <li>Refined deep learning models (R-CNN, Detectron2, U-Net) for seed germination and salt tolerance, improving accuracy to 98%.</li>
+                            <li>Deployed models on Raspberry Pi and Jetson Nano, achieving efficient operation at &lt;2.5W.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header fade-in">
+                <h2>Technical Arsenal</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category glass-card fade-in-up" style="--delay: 0.1s">
+                    <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Embedded & IoT</h3>
+                    <p>STM32, Raspberry Pi, Jetson Nano, ARM Cortex, Zephyr RTOS, Linux, Bootloaders.</p>
+                    <div class="tags">
+                        <span>I2C</span><span>SPI</span><span>UART</span><span>CAN</span><span>MQTT</span><span>LoRa</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-card fade-in-up" style="--delay: 0.2s">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Deep Learning, Neural Networks, LLMs, Edge Computing, Computer Vision.</p>
+                    <div class="tags">
+                        <span>YOLO</span><span>CNNs</span><span>PyTorch</span><span>Transformers</span><span>RAG</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card fade-in-up" style="--delay: 0.3s">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <p>Python, C, C++, Embedded C, MATLAB, Java, C#, JavaScript, HTML, CSS.</p>
+                    <div class="tags">
+                        <span>Python</span><span>C++</span><span>React.js</span><span>Node.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card fade-in-up" style="--delay: 0.4s">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & Platforms</h3>
+                    <p>Git, Docker, CI/CD, Bash, AWS, GCP, Tailscale, Cisco Packet Tracer.</p>
+                    <div class="tags">
+                        <span>Docker</span><span>AWS</span><span>GCP</span><span>Linux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header fade-in">
+                <h2>Featured Projects</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card fade-in-up">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="project-icon"><i class="fas fa-leaf"></i></div>
+                            <div class="project-links">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <h3>Chlorophyll Estimation</h3>
+                        <p>Low-cost ML-based device for real-time chlorophyll estimation, achieving 89% accuracy with XGBoost. Enabling precise crop health monitoring.</p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>XGBoost</li>
+                            <li>Precision Ag</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card fade-in-up">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="project-icon"><i class="fas fa-bug"></i></div>
+                            <div class="project-links">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <h3>Bee Frame Analyzer</h3>
+                        <p>Edge-based deep learning pipeline for honeybee frame analysis on Raspberry Pi. Achieved 93% accuracy using YOLO and custom CNNs, reducing inspection time by 85%.</p>
+                        <ul class="project-tech">
+                            <li>YOLO</li>
+                            <li>Raspberry Pi</li>
+                            <li>Edge AI</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card fade-in-up">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="project-icon"><i class="fas fa-user-check"></i></div>
+                            <div class="project-links">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <h3>Face Recognition System</h3>
+                        <p>Developed a deep learning-based anti-spoofing attendance system with 98% accuracy. Optimized for Jetson Nano for scalable deployment.</p>
+                        <ul class="project-tech">
+                            <li>OpenCV</li>
+                            <li>Jetson Nano</li>
+                            <li>Computer Vision</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card fade-in-up">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="project-icon"><i class="fas fa-robot"></i></div>
+                            <div class="project-links">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <h3>Domain-Specific LLM</h3>
+                        <p>Fine-tuned Llama 2 and Gemma:2B for a character-driven chatbot. Integrated vector embeddings and RAG, achieving 95% accuracy in context retention.</p>
+                        <ul class="project-tech">
+                            <li>Transformers</li>
+                            <li>RAG</li>
+                            <li>PyTorch</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-box glass-card fade-in">
+                <h2>Let's build something incredible.</h2>
+                <p>I'm always open to discussing embedded systems, AI integrations, or new opportunities.</p>
+                
+                <div class="contact-info">
+                    <a href="mailto:kunurusathvik4@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>kunurusathvik4@gmail.com</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 7569438573</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hyderabad, India</span>
+                    </div>
+                </div>
+                
+                <a href="mailto:kunurusathvik4@gmail.com" class="btn-primary mt-4">Say Hello</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sathvik Kunuru. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/SathvikKunuru" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/sathvik-kunuru" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://huggingface.co/Sathvik-24" target="_blank">HF</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .custom-cursor {
+        display: block;
+    }
+}
