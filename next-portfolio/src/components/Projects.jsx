@@ -6,69 +6,196 @@ import { FiExternalLink } from 'react-icons/fi';
 import Tilt from 'react-parallax-tilt';
 import './Projects.css';
 
-const projectsData = [
+export const projectsData = [
     {
-        title: "RDPMS Railway",
-        category: "Embedded",
-        icon: <FaTrain />,
-        description: "Real-time train monitoring & predictive-maintenance system for Indian Railways. Integrating LiDAR+IMU for pose & motion estimation.",
-        tech: ["IoT", "SCADA", "LiDAR", "IMU"]
+        title: "Weight Measurement App",
+        category: "Other",
+        icon: <FaMobileAlt />,
+        description: "Desktop app for Windows that reads weight measurements from a serial-connected device, displays live data, and generates PDF reports.",
+        tech: ["Python", "Tkinter", "RS-232"],
+        githubLink: "https://github.com/SathvikKunuru/weight-measurment-app"
     },
     {
-        title: "Face Detection (Edge-AI)",
-        category: "AI",
+        title: "Dataset Creator RPi",
+        category: "Embedded",
+        icon: <FaMicrochip />,
+        description: "Raspberry Pi project that automates image capture with a webcam and manages data transfer to USB devices.",
+        tech: ["Python", "Raspberry Pi", "Automation"],
+        githubLink: "https://github.com/SathvikKunuru/Dataset-Creator-RPi"
+    },
+    {
+        title: "Zephyr OS Examples",
+        category: "Embedded",
+        icon: <FaMicrochip />,
+        description: "Example applications and custom DTS (Device Tree Source) configured and tested for the STM32U575VIT6Q microcontroller.",
+        tech: ["C", "CMake", "Zephyr OS", "STM32"],
+        githubLink: "https://github.com/SathvikKunuru/zephyr-examples"
+    },
+    {
+        title: "Zephyr Custom DTS",
+        category: "Embedded",
+        icon: <FaMicrochip />,
+        description: "Custom Device Tree Source (DTS) configuration for STM32U575VIT6Q for Zephyr OS.",
+        tech: ["CMake", "Zephyr OS", "DTS"],
+        githubLink: "https://github.com/SathvikKunuru/zephyr-U575VIT6Q"
+    },
+    {
+        title: "Music Alarm (ESP)",
+        category: "Embedded",
+        icon: <FaRobot />,
+        description: "An alarm project that plays songs based on triggered events using an ESP microcontroller.",
+        tech: ["Python", "ESP", "IoT"],
+        githubLink: "https://github.com/SathvikKunuru/music-alarm"
+    },
+    {
+        title: "UWB Tests (DWM1000)",
+        category: "Embedded",
+        icon: <FaGlobe />,
+        description: "Test files and implementation for Ultra-Wideband (UWB) communication using DWM1000 modules.",
+        tech: ["C++", "DWM1000", "UWB"],
+        githubLink: "https://github.com/SathvikKunuru/UWB-Tests"
+    },
+    {
+        title: "Exercism C Tracks",
+        category: "Other",
         icon: <FaUserCheck />,
-        description: "Low-power, offline face-recognition attendance system. Developed with deep learning-based anti-spoofing; benchmarking SCRFD model.",
-        tech: ["OpenCV", "Edge AI", "SCRFD", "Jetson Nano"]
+        description: "A collection of solutions and exercises completed in C from the Exercism platform.",
+        tech: ["C", "Problem Solving"],
+        githubLink: "https://github.com/SathvikKunuru/Exercism"
+    },
+    {
+        title: "IBR117 Ethernet (Qt)",
+        category: "Other",
+        icon: <FaGlobe />,
+        description: "Application made to test IBR117 board's Ethernet using Qt Libraries.",
+        tech: ["Makefile", "Qt", "Ethernet"],
+        githubLink: "https://github.com/SathvikKunuru/IBR117-Ethernet-Qt"
+    },
+    {
+        title: "IBR117 Ethernet (C++)",
+        category: "Embedded",
+        icon: <FaGlobe />,
+        description: "Application made in Qt to test the 'IBR117' boards Ethernet (LAN) - cpp version.",
+        tech: ["Makefile", "C++", "Qt"],
+        githubLink: "https://github.com/SathvikKunuru/IBR117-Ethernet"
+    },
+    {
+        title: "IBR117 I2C Test",
+        category: "Embedded",
+        icon: <FaMicrochip />,
+        description: "Test application using Qt for performing I2C operations on IBR117.",
+        tech: ["Makefile", "I2C", "Qt"],
+        githubLink: "https://github.com/SathvikKunuru/IBR117-I2C"
+    },
+    {
+        title: "IBR117 Linux Headers",
+        category: "Embedded",
+        icon: <FaMicrochip />,
+        description: "Custom header files for the IBR117 Linux board.",
+        tech: ["C++", "Linux Headers"],
+        githubLink: "https://github.com/SathvikKunuru/IBR117-Linux-Header-files"
+    },
+    {
+        title: "Robots Collection",
+        category: "Embedded",
+        icon: <FaRobot />,
+        description: "A repository collecting some of the small robotics projects I have made.",
+        tech: ["Python", "Robotics"],
+        githubLink: "https://github.com/SathvikKunuru/Robots"
+    },
+    {
+        title: "Face Recognition",
+        category: "AI/ML",
+        icon: <FaUserCheck />,
+        description: "Face recognition project source code for Jetson/Raspberry Pi.",
+        tech: ["Python", "Face Recognition"],
+        githubLink: "https://github.com/SathvikKunuru/face-preinst"
+    },
+    {
+        title: "Webathon 2k24",
+        category: "Web Apps",
+        icon: <FaGlobe />,
+        description: "Project for Webathon 2k24, ACM & GDSC (Team Kadane).",
+        tech: ["Web Development", "Hackathon"],
+        githubLink: "https://github.com/SathvikKunuru/Webathon-2k24_Team-Kadane"
     },
     {
         title: "Trainer Kits",
         category: "Embedded",
         icon: <FaMicrochip />,
-        description: "Educational embedded-learning kits (microcontroller + sensors + workbook) for schools and colleges.",
+        description: "Educational embedded‑learning kits (microcontroller + sensors + workbook) for schools and colleges.",
         tech: ["PCB Design", "Microcontrollers", "Sensors"]
+    },
+    {
+        title: "RDPMS Railway",
+        category: "Embedded",
+        icon: <FaTrain />,
+        description: "Real‑time train monitoring & predictive‑maintenance system for Indian Railways. Integrating LiDAR+IMU for pose & motion estimation.",
+        tech: ["IoT", "SCADA", "LiDAR", "IMU"]
+    },
+    {
+        title: "Face Detection (Edge-AI)",
+        category: "AI/ML",
+        icon: <FaUserCheck />,
+        description: "Low‑power, offline face‑recognition attendance system. Developed with deep learning‑based anti-spoofing; benchmarking SCRFD model.",
+        tech: ["Edge AI", "SCRFD", "Jetson Nano"]
     },
     {
         title: "WeDevs Website",
         category: "Web Apps",
         icon: <FaGlobe />,
-        description: "Corporate site showcasing projects, services, and grant readiness. Features a 23-route architecture.",
+        description: "Corporate site showcasing projects, services, and grant readiness. Features a 23‑route architecture.",
         tech: ["Next.js 15", "Tailwind CSS", "React"]
-    },
-    {
-        title: "Smart Irrigation App",
-        category: "Apps",
-        icon: <FaMobileAlt />,
-        description: "A responsive cross-platform mobile application to monitor soil moisture and control water pumps remotely.",
-        tech: ["React Native", "Node.js", "MongoDB"]
-    },
-    {
-        title: "Chlorophyll Estimation",
-        category: "AI",
-        icon: <FaLeaf />,
-        description: "Low-cost ML-based device for real-time chlorophyll estimation, achieving 89% accuracy with XGBoost for precise crop health monitoring.",
-        tech: ["Python", "XGBoost", "Precision Ag"]
-    },
-    {
-        title: "Bee Frame Analyzer",
-        category: "AI",
-        icon: <FaBug />,
-        description: "Edge-based deep learning pipeline for honeybee frame analysis. Achieved 93% accuracy using YOLO and custom CNNs.",
-        tech: ["YOLO", "Raspberry Pi", "Linux"]
-    },
-    {
-        title: "Domain-Specific LLM",
-        category: "AI",
-        icon: <FaRobot />,
-        description: "Fine-tuned Llama 2 and Gemma:2B. Integrated vector embeddings and RAG, achieving 95% accuracy in context retention.",
-        tech: ["Transformers", "RAG", "PyTorch"]
     },
     {
         title: "Yantrion Outreach",
         category: "Other",
         icon: <FaRocket />,
-        description: "Network of 125+ contacts across academia, industry, and government for collaboration and deep-tech technology transfer.",
+        description: "Network of 125+ contacts across academia, industry, and government for collaboration and deep‑tech technology transfer.",
         tech: ["Networking", "Tech Transfer", "Strategy"]
+    },
+    {
+        title: "Snakebite Prize",
+        category: "Other",
+        icon: <FaLeaf />,
+        description: "Innovation challenge focused on biomedical and agricultural solutions.",
+        tech: ["Biomedical", "Agri", "Innovation"]
+    },
+    {
+        title: "NIDHI‑iTBI Grant",
+        category: "Other",
+        icon: <FaRocket />,
+        description: "Personal grant application pursuit under the NIDHI‑iTBI scheme for deep‑tech startup seed funding.",
+        tech: ["Grant", "Deep-tech", "Startup"]
+    },
+    {
+        title: "Chlorophyll Estimation",
+        category: "Embedded",
+        icon: <FaLeaf />,
+        description: "Optical bench setup and calibration for precise crop health monitoring and chlorophyll estimation.",
+        tech: ["Optics", "Sensors", "Agriculture"]
+    },
+    {
+        title: "Health Band",
+        category: "Embedded",
+        icon: <FaMobileAlt />,
+        description: "Wearable health band focused on sensor validation for accuracy, drift, and environmental tolerance.",
+        tech: ["Sensors", "Wearables", "Health"]
+    },
+    {
+        title: "PLC Tracker",
+        category: "Embedded",
+        icon: <FaMicrochip />,
+        description: "Robust PLC‑to‑field‑device communication testing using the ST7540 evaluation board.",
+        tech: ["PLC", "ST7540", "Communication"]
+    },
+    {
+        title: "Llama-7B-Chacha300",
+        category: "AI/ML",
+        icon: <FaRobot />,
+        description: "Fine-tuned Llama 7B model hosted on Hugging Face.",
+        tech: ["LLM", "Llama 7B", "Hugging Face"],
+        githubLink: "https://huggingface.co/Sathvik-24/llama-7b-chacha300"
     }
 ];
 
@@ -107,7 +234,7 @@ const Projects = () => {
         return false;
     });
 
-    const filterTabs = ['All', 'AI', 'Embedded', 'Apps', 'Web Apps', 'Other'];
+    const filterTabs = ['All', 'AI/ML', 'Embedded', 'Web Apps', 'Other'];
 
     return (
         <section id="projects" className="section">
@@ -190,7 +317,11 @@ const Projects = () => {
                                                 <div className="project-top">
                                                     <div className="project-icon">{project.icon}</div>
                                                     <div className="project-links">
-                                                        <FiExternalLink />
+                                                        {project.githubLink && (
+                                                            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
+                                                                <FiExternalLink />
+                                                            </a>
+                                                        )}
                                                     </div>
                                                 </div>
                                                 <h3>{project.title}</h3>

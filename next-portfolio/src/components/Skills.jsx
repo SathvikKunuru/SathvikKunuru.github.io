@@ -5,27 +5,27 @@ import { FaMicrochip, FaBrain, FaCode, FaTools, FaLaptopCode, FaProjectDiagram, 
 import Tilt from 'react-parallax-tilt';
 import './Skills.css';
 
-const skillsData = [
+export const skillsData = [
     {
         category: "Embedded",
         icon: <FaMicrochip />,
         title: "Embedded & IoT",
         description: "STM32, Raspberry Pi, Jetson Nano, ARM Cortex, Zephyr RTOS, Linux, Bootloaders.",
-        tags: ["I2C", "SPI", "UART", "CAN", "MQTT", "LoRa"]
+        tags: ["I2C", "SPI", "UART", "CAN", "MQTT", "LoRa", "Microcontrollers", "Sensors", "IoT", "SCADA", "LiDAR", "IMU", "Optics", "Wearables", "Health", "PLC", "ST7540", "Communication", "STM32", "ESP", "Raspberry Pi", "DWM1000", "UWB", "RS-232", "Serial Port", "Ethernet", "LAN", "IBR117 Board", "Embedded Linux", "Device Tree", "Hardware Interface", "Embedded Devices", "PLC Programming", "Programmable Logic Controller (PLC)", "SIMATIC STEP 7", "PLC Ladder Logic", "Yocto Project", "TinyOS", "TinyML", "Microprocessors", "Arduino IDE", "Embedded C", "Electronics", "Electronic Circuits", "Hardware Design", "Hardware Hacking", "Electronics Technology", "Zephyr OS", "PCB Design", "Altium", "KiCad", "3D Printing", "Robotics", "Biomedical", "Agriculture", "Modbus", "Wi-Fi", "TCP/UDP", "ARM Cortex", "Bootloaders", "BitBake", "Poky", "Precision Agriculture", "USB Automation"]
     },
     {
         category: "AI",
         icon: <FaBrain />,
         title: "AI & Machine Learning",
         description: "Deep Learning, Neural Networks, LLMs, Edge Computing, Computer Vision.",
-        tags: ["YOLO", "CNNs", "PyTorch", "Transformers", "RAG"]
+        tags: ["YOLO", "CNNs", "PyTorch", "Transformers", "RAG", "Face Recognition", "Edge AI", "SCRFD", "Jetson Nano", "LLM", "Llama 7B", "Hugging Face", "LLaMA", "LLaMA 2", "NLP", "Fine-tuning", "Instruction Tuning", "AutoTrain Advanced", "Hinglish", "OpenCV", "Computer Vision", "Spoof Detection", "Face Attendance", "Deep learning", "Deep Reinforcement Learning", "Prompt Engineering", "Generative AI", "Facial Recognition", "Convolutional Neural Networks (CNN)", "Dlib", "Pandas (Software)", "TensorFlow", "Machine Learning", "XGBoost", "Real-Time Inference", "Large Language Models", "Agentic AI Pipelines", "Multi-Agent Architecture", "Sequential Pipelines", "Parallel Execution", "Conditional Workflows", "Feedback Loops", "Context Management", "Holographic Memory", "Pipeline Resilience", "Model Drift Prevention", "Self-Improving Pipelines", "Toolchain Integration", "Idempotent Operations", "Batch Processing", "Monitoring & Observability", "Orchestration Patterns"]
     },
     {
         category: "Web Apps",
         icon: <FaLaptopCode />,
         title: "Web Development",
         description: "Building responsive, modern single-page applications and interactive corporate sites.",
-        tags: ["React.js", "Next.js", "Node.js", "Tailwind"]
+        tags: ["React.js", "Next.js", "Node.js", "Tailwind CSS", "Express", "MongoDB", "Postgres", "Web Development", "HTML", "CSS", "GUI", "Bootstrap (Framework)", "Visual Web Developer", "Web Application Development", "Web Projects", "Back-End Web Development", "HTML Scripting", "Front-End Development"]
     },
     {
         category: "Apps",
@@ -39,21 +39,21 @@ const skillsData = [
         icon: <FaCode />,
         title: "General Programming",
         description: "Python, C, C++, Embedded C, MATLAB, Java, C#, JavaScript, HTML, CSS.",
-        tags: ["Python", "C++", "Java", "C#"]
+        tags: ["Python", "C++", "C", "Java", "C#", "JavaScript", "Bash", "CMake", "Object-Oriented Programming (OOP)"]
     },
     {
         category: "Other",
         icon: <FaTools />,
         title: "Tools & Platforms",
         description: "Git, Docker, CI/CD, Bash, AWS, GCP, Tailscale, Cisco Packet Tracer.",
-        tags: ["Docker", "AWS", "GCP", "Linux"]
+        tags: ["Docker", "AWS", "GCP", "Linux", "Git", "CI/CD", "Postman", "venv", "Qt", "Ubuntu", "JetBrains Rider", "GitHub", "SSH tunneling", "n8n"]
     },
     {
         category: "Other",
         icon: <FaProjectDiagram />,
         title: "Strategy & Management",
         description: "Deep-tech technology transfer, partner discovery, and NIDHI-iTBI grant strategy.",
-        tags: ["Agile", "Research", "Grants"]
+        tags: ["Agile", "Research", "Grants", "Networking", "Tech Transfer", "Strategy", "Innovation", "Startup", "Accessibility", "Problem Solving", "Renewable Resources", "Nanotechnology", "English", "Design Patents", "Explosives Engineering", "IT Project Implementation", "Hacking", "Skill Development", "Telugu", "Lifelong Learning", "Hindi", "College Counseling", "Presentations", "Computer Literacy", "Presentation Preparation", "Learning Styles", "Entrepreneurship Education", "Analytical Skills", "Business Development"]
     }
 ];
 

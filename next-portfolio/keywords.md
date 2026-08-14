@@ -1,0 +1,197 @@
+# Sathvik's Extracted Keywords (Master List)
+
+Here is the finalized master list of keywords after scraping your **GitHub**, **Hugging Face**, processing your **LinkedIn** skills, and pulling from your **Resume**. Everything has been successfully integrated into your `Skills.jsx` for the 3D Knowledge Graph!
+
+## Embedded & IoT
+- I2C
+- SPI
+- UART
+- CAN
+- MQTT
+- LoRa
+- Microcontrollers
+- Sensors
+- IoT
+- SCADA
+- LiDAR
+- IMU
+- Optics
+- Wearables
+- Health
+- PLC
+- ST7540
+- Communication
+- STM32 / STM32U575VIT6Q
+- ESP / ESP8266 / ESP32
+- Raspberry Pi (RPi)
+- DWM1000
+- UWB (Ultra-Wideband)
+- RS-232 / Serial Port
+- Ethernet / LAN
+- IBR117 Board
+- Embedded Linux
+- Device Tree (DTS)
+- Hardware Interface
+- Internet Protocol Suite (TCP/IP)
+- User Datagram Protocol (UDP)
+- Embedded Devices
+- PLC Programming
+- Programmable Logic Controller (PLC)
+- SIMATIC STEP 7
+- PLC Ladder Logic
+- Yocto Project
+- TinyOS
+- TinyML
+- Microprocessors
+- Arduino IDE
+- Embedded C
+- Electronics
+- Electronic Circuits
+- Hardware Design
+- Hardware Hacking
+- Electronics Technology
+- **[RESUME]** Modbus
+- **[RESUME]** Wi-Fi
+- **[RESUME]** TCP/UDP
+- **[RESUME]** ARM Cortex
+- **[RESUME]** Bootloaders
+- **[RESUME]** BitBake
+- **[RESUME]** Poky
+- **[RESUME]** Precision Agriculture
+- **[RESUME]** USB Automation
+
+## AI & Machine Learning
+- YOLO
+- CNNs
+- PyTorch
+- Transformers
+- RAG
+- Face Recognition
+- Edge AI
+- SCRFD
+- Jetson Nano
+- LLM
+- Llama 7B
+- Hugging Face
+- LLaMA / LLaMA 2
+- NLP (Natural Language Processing)
+- Fine-tuning
+- Instruction Tuning
+- AutoTrain Advanced
+- Hinglish / Translation
+- OpenCV
+- Computer Vision
+- Spoof Detection / Liveness Detection
+- Face Attendance
+- Deep learning
+- Deep Reinforcement Learning
+- Prompt Engineering
+- Generative AI
+- Facial Recognition
+- Convolutional Neural Networks (CNN)
+- Dlib
+- Pandas (Software)
+- TensorFlow
+- Machine Learning
+- **[RESUME]** XGBoost
+- **[RESUME]** Real-Time Inference
+- **[RESUME]** Large Language Models
+- **[AGENTIC]** Agentic AI Pipelines
+- **[AGENTIC]** Multi-Agent Architecture
+- **[AGENTIC]** Sequential Pipelines
+- **[AGENTIC]** Parallel Execution
+- **[AGENTIC]** Conditional Workflows
+- **[AGENTIC]** Feedback Loops
+- **[AGENTIC]** Context Management
+- **[AGENTIC]** Holographic Memory
+- **[AGENTIC]** Pipeline Resilience
+- **[AGENTIC]** Model Drift Prevention
+- **[AGENTIC]** Self-Improving Pipelines
+- **[AGENTIC]** Toolchain Integration
+- **[AGENTIC]** Idempotent Operations
+- **[AGENTIC]** Batch Processing
+- **[AGENTIC]** Monitoring & Observability
+- **[AGENTIC]** Orchestration Patterns
+
+## Web Apps & Software
+- Next.js
+- React
+- Node.js
+- Express
+- MongoDB
+- Postgres
+- Tailwind CSS
+- Web Development
+- Hackathon
+- HTML
+- CSS
+- GUI / Desktop Applications
+- Bootstrap (Framework)
+- Visual Web Developer
+- Web Application Development
+- Web Projects
+- Back-End Web Development
+- HTML Scripting
+- Front-End Development
+
+## Languages, Frameworks & Core Tools
+- C++
+- Python
+- JavaScript
+- Bash
+- CMake
+- Git
+- Docker
+- CI/CD
+- Postman
+- C
+- venv (Virtual Environments)
+- Zephyr OS
+- Qt / Qt Libraries
+- Ubuntu
+- JetBrains Rider
+- Object-Oriented Programming (OOP)
+- Linux
+- GitHub
+- **[RESUME]** SSH tunneling
+- **[RESUME]** n8n
+
+## Innovation, Strategy & Other
+- Networking
+- Tech Transfer
+- Strategy
+- Innovation
+- Grant
+- Startup
+- Accessibility / Assistive Technology
+- header files
+- Problem Solving
+- Renewable Resources
+- Nanotechnology
+- English
+- Design Patents
+- Explosives Engineering
+- IT Project Implementation
+- Hacking
+- Skill Development
+- Telugu
+- Lifelong Learning
+- Hindi
+- College Counseling
+- Presentations
+- Computer Literacy
+- Presentation Preparation
+- Learning Styles
+- Entrepreneurship Education
+- Analytical Skills
+- Business Development
+
+## Hardware & Engineering
+- PCB Design
+- Altium
+- KiCad
+- 3D Printing
+- Robotics
+- Biomedical
+- Agri
+- Agriculture
