@@ -8,7 +8,10 @@ This is the source code for my personal portfolio website!
 
 ## Want to make your own? Steal it! 🛸
 
-If you like the design and want to use it for yourself, it's super easy. Just copy the massive prompt below and paste it into your favorite AI agent (like Cursor, GitHub Copilot, or Gemini). It will do all the heavy lifting to clone the codebase and customize it for you!
+If you like the design and want to use it for yourself, it's super easy:
+1. **Fork this repository** (Click the "Fork" button in the top right of GitHub).
+2. Name your new repository `[yourgithubusername].github.io`.
+3. Copy the massive prompt below and paste it into your favorite AI agent (like Cursor, GitHub Copilot, or Gemini). It will clone your new repo and customize it for you!
 
 ### 🤖 Give this prompt to your Agent:
 
@@ -17,8 +20,8 @@ If you like the design and want to use it for yourself, it's super easy. Just co
 > Please perform the following actions sequentially:
 > 
 > **1. CLONE THE REPOSITORY:**
-> Please clone the template repository from this exact URL:
-> `https://github.com/SathvikKunuru/SathvikKunuru.github.io.git`
+> I have already forked the template repository to my account. Please clone my new repository locally from:
+> `https://github.com/[myusername]/[myusername].github.io.git`
 > 
 > **2. SWAP ALL PERSONAL INFORMATION:**
 > Scan the components in `next-portfolio/src/components/` (specifically `Hero.jsx`, `Projects.jsx`, `Experience.jsx`, and `Contact.jsx`) and replace all of Sathvik Kunuru's information with my own. 
@@ -37,5 +40,5 @@ If you like the design and want to use it for yourself, it's super easy. Just co
 > **4. CONFIGURE FOR GITHUB PAGES:**
 > Check `next.config.mjs`. If I am deploying to a root domain (e.g. `[myusername].github.io`), ensure that `basePath` and `assetPrefix` are completely removed. If I am deploying to a subpath (e.g. `[myusername].github.io/portfolio`), ensure the `basePath` is set correctly.
 > 
-> **5. PUSH AND DEPLOY:**
-> Finally, help me initialize a new git repository for this code, commit the changes, and push it to my own GitHub account. Walk me through activating GitHub Actions so my new portfolio goes live immediately!
+> **5. COMMIT, PUSH AND DEPLOY:**
+> Finally, help me commit the changes and push them to my repository. Walk me through activating GitHub Actions so my new portfolio goes live on GitHub Pages!
