@@ -32,6 +32,7 @@ If you like the design and want to use it for yourself, it's super easy:
 > - Tagline: [A short sentence about what you do]
 > - GitHub URL: [Your GitHub Link]
 > - LinkedIn URL: [Your LinkedIn Link]
+> - Other Profiles : ....
 > - About Me: [A short paragraph about your skills and goals]
 > 
 > **3. UPDATE THE NEURAL NET & SKILLS:**
