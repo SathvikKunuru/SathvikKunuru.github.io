@@ -13,17 +13,20 @@ const skillsData = [];
 let currentCategory = null;
 
 const catMap = {
-    '## Embedded Systems & IoT': 'Embedded',
+    '## Embedded & IoT': 'Embedded',
     '## AI & Machine Learning': 'AI',
     '## Web Apps & Software': 'Web Apps',
     '## Languages, Frameworks & Core Tools': 'Apps',
-    '## Innovation, Strategy & Other': 'Other'
+    '## Innovation, Strategy & Other': 'Other',
+    '## Hardware & Engineering': 'Embedded'
 };
 
 for (const line of lines) {
     if (line.startsWith('## ')) {
         const cat = line.trim().replace(/\r/g, '');
+        console.log(`Found heading: "${cat}"`);
         if (catMap[cat]) {
+            console.log(`Mapped heading "${cat}" to "${catMap[cat]}"`);
             currentCategory = catMap[cat];
             skillsData.push({ category: currentCategory, tags: [] });
         }

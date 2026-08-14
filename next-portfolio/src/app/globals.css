@@ -186,10 +186,97 @@ ul {
 }
 
 .btn-icon:hover {
-    background-color: var(--bg-card-hover);
-    border-color: var(--accent-cyan);
-    color: var(--accent-cyan);
     transform: translateY(-2px);
+}
+
+.btn-icon.github:hover {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.3);
+}
+
+.btn-icon.linkedin:hover {
+    background-color: #0077b5;
+    border-color: #0077b5;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 119, 181, 0.3);
+}
+
+.btn-icon.youtube:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+.btn-icon.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(214, 36, 159, 0.3);
+}
+
+.btn-icon.whatsapp:hover {
+    background-color: #25D366;
+    border-color: #25D366;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btn-icon.gmail:hover {
+    background-color: #EA4335;
+    border-color: #EA4335;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(234, 67, 53, 0.3);
+}
+
+.btn-icon.phone:hover {
+    background-color: #00E5FF;
+    border-color: #00E5FF;
+    color: #000000;
+    box-shadow: 0 10px 20px rgba(0, 229, 255, 0.3);
+}
+
+/* Glitch Button (Terminal Vibe) */
+.glitch-btn {
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 30px;
+    background: transparent;
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    box-shadow: 0 0 10px rgba(0,255,255,0.2) inset;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.glitch-btn:hover {
+    background: var(--accent-cyan);
+    color: #000;
+    box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+/* Navbar text style matching terminal heading */
+.nav-glitch-text {
+    font-family: monospace;
+    color: var(--accent-cyan);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-glitch-text:hover {
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 /* Super Animated Highlight Effects */

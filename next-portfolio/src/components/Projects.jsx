@@ -8,6 +8,36 @@ import './Projects.css';
 
 export const projectsData = [
     {
+        title: "Agentic AI Pipelines",
+        category: "AI/ML",
+        icon: <FaRobot />,
+        description: "Development of autonomous, multi-agent AI pipelines and workflows utilizing Hermes and OpenClaw models.",
+        tech: ["Agentic AI", "Hermes", "OpenClaw"]
+    },
+    {
+        title: "Lernnova",
+        category: "Web Apps",
+        icon: <FaGlobe />,
+        description: "AI-powered career guidance platform featuring social profile analysis, a smart chatbot, and dynamic learning roadmaps.",
+        tech: ["Next.js", "AI", "Tailwind CSS"],
+        githubLink: "https://github.com/Projects-s/Lernnova"
+    },
+    {
+        title: "Edumate-AI",
+        category: "Web Apps",
+        icon: <FaGlobe />,
+        description: "An AI-driven educational platform built with Next.js, designed to enhance the modern learning and teaching experience.",
+        tech: ["Next.js", "AI", "Web Development"],
+        githubLink: "https://github.com/Projects-s/Edumate-AI"
+    },
+    {
+        title: "Micro SaaS Apps",
+        category: "Web Apps",
+        icon: <FaGlobe />,
+        description: "A collection of scalable, niche Micro SaaS applications tailored to specific business logic and utility needs.",
+        tech: ["Next.js", "SaaS", "Full-Stack"]
+    },
+    {
         title: "Weight Measurement App",
         category: "Other",
         icon: <FaMobileAlt />,
@@ -22,14 +52,6 @@ export const projectsData = [
         description: "Raspberry Pi project that automates image capture with a webcam and manages data transfer to USB devices.",
         tech: ["Python", "Raspberry Pi", "Automation"],
         githubLink: "https://github.com/SathvikKunuru/Dataset-Creator-RPi"
-    },
-    {
-        title: "Zephyr OS Examples",
-        category: "Embedded",
-        icon: <FaMicrochip />,
-        description: "Example applications and custom DTS (Device Tree Source) configured and tested for the STM32U575VIT6Q microcontroller.",
-        tech: ["C", "CMake", "Zephyr OS", "STM32"],
-        githubLink: "https://github.com/SathvikKunuru/zephyr-examples"
     },
     {
         title: "Zephyr Custom DTS",
@@ -54,14 +76,6 @@ export const projectsData = [
         description: "Test files and implementation for Ultra-Wideband (UWB) communication using DWM1000 modules.",
         tech: ["C++", "DWM1000", "UWB"],
         githubLink: "https://github.com/SathvikKunuru/UWB-Tests"
-    },
-    {
-        title: "Exercism C Tracks",
-        category: "Other",
-        icon: <FaUserCheck />,
-        description: "A collection of solutions and exercises completed in C from the Exercism platform.",
-        tech: ["C", "Problem Solving"],
-        githubLink: "https://github.com/SathvikKunuru/Exercism"
     },
     {
         title: "IBR117 Ethernet (Qt)",
@@ -104,29 +118,6 @@ export const projectsData = [
         githubLink: "https://github.com/SathvikKunuru/Robots"
     },
     {
-        title: "Face Recognition",
-        category: "AI/ML",
-        icon: <FaUserCheck />,
-        description: "Face recognition project source code for Jetson/Raspberry Pi.",
-        tech: ["Python", "Face Recognition"],
-        githubLink: "https://github.com/SathvikKunuru/face-preinst"
-    },
-    {
-        title: "Webathon 2k24",
-        category: "Web Apps",
-        icon: <FaGlobe />,
-        description: "Project for Webathon 2k24, ACM & GDSC (Team Kadane).",
-        tech: ["Web Development", "Hackathon"],
-        githubLink: "https://github.com/SathvikKunuru/Webathon-2k24_Team-Kadane"
-    },
-    {
-        title: "Trainer Kits",
-        category: "Embedded",
-        icon: <FaMicrochip />,
-        description: "Educational embedded‑learning kits (microcontroller + sensors + workbook) for schools and colleges.",
-        tech: ["PCB Design", "Microcontrollers", "Sensors"]
-    },
-    {
         title: "RDPMS Railway",
         category: "Embedded",
         icon: <FaTrain />,
@@ -139,34 +130,6 @@ export const projectsData = [
         icon: <FaUserCheck />,
         description: "Low‑power, offline face‑recognition attendance system. Developed with deep learning‑based anti-spoofing; benchmarking SCRFD model.",
         tech: ["Edge AI", "SCRFD", "Jetson Nano"]
-    },
-    {
-        title: "WeDevs Website",
-        category: "Web Apps",
-        icon: <FaGlobe />,
-        description: "Corporate site showcasing projects, services, and grant readiness. Features a 23‑route architecture.",
-        tech: ["Next.js 15", "Tailwind CSS", "React"]
-    },
-    {
-        title: "Yantrion Outreach",
-        category: "Other",
-        icon: <FaRocket />,
-        description: "Network of 125+ contacts across academia, industry, and government for collaboration and deep‑tech technology transfer.",
-        tech: ["Networking", "Tech Transfer", "Strategy"]
-    },
-    {
-        title: "Snakebite Prize",
-        category: "Other",
-        icon: <FaLeaf />,
-        description: "Innovation challenge focused on biomedical and agricultural solutions.",
-        tech: ["Biomedical", "Agri", "Innovation"]
-    },
-    {
-        title: "NIDHI‑iTBI Grant",
-        category: "Other",
-        icon: <FaRocket />,
-        description: "Personal grant application pursuit under the NIDHI‑iTBI scheme for deep‑tech startup seed funding.",
-        tech: ["Grant", "Deep-tech", "Startup"]
     },
     {
         title: "Chlorophyll Estimation",
@@ -246,7 +209,7 @@ const Projects = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ type: "spring", stiffness: 200, damping: 20 }}
                 >
-                    <h2 className="animated-heading">Masterpiece Projects</h2>
+                    <h2 className="animated-heading">Featured Builds</h2>
                     <div className="line"></div>
                 </motion.div>
 

@@ -55,7 +55,7 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Hardware Hacking
 - Electronics Technology
 - Modbus
-- Wi-Fi
+- WiFi
 - TCP/UDP
 - ARM Cortex
 - Bootloaders
@@ -63,6 +63,17 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Poky
 - Precision Agriculture
 - USB Automation
+- Zephyr RTOS
+- RAK
+- RS485
+- Industrial Automation
+- Low Power Wireless Communication
+- SBCs
+- Firmware
+- RTOS
+- OTA Updates
+- LT8491
+- MPPT
 
 ## AI & Machine Learning
 - YOLO
@@ -79,7 +90,7 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Hugging Face
 - LLaMA / LLaMA 2
 - NLP (Natural Language Processing)
-- Fine-tuning
+- Fine tuning
 - Instruction Tuning
 - AutoTrain Advanced
 - Hinglish / Translation
@@ -98,10 +109,10 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - TensorFlow
 - Machine Learning
 - XGBoost
-- Real-Time Inference
+- Real Time Inference
 - Large Language Models
 - Agentic AI Pipelines
-- Multi-Agent Architecture
+- Multi Agent Architecture
 - Sequential Pipelines
 - Parallel Execution
 - Conditional Workflows
@@ -110,7 +121,7 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Holographic Memory
 - Pipeline Resilience
 - Model Drift Prevention
-- Self-Improving Pipelines
+- Self Improving Pipelines
 - Toolchain Integration
 - Idempotent Operations
 - Batch Processing
@@ -121,6 +132,24 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - openclaw
 - ollama
 - vllm
+- Neural Networks
+- Edge Computing
+- RCNN
+- Detectron2
+- UNet
+- Inception
+- Predictive Maintenance
+- Inference Latency
+- Data Analysis
+- Matplotlib
+- Labeling Automation
+- Object Detection
+- Real Time Processing
+- Face Embeddings
+- BitsAndBytes
+- Tokenization
+- Gemma 2B
+- Vector Embeddings
 
 ## Web Apps & Software
 - Next.js
@@ -139,9 +168,9 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Visual Web Developer
 - Web Application Development
 - Web Projects
-- Back-End Web Development
+- BackEnd Web Development
 - HTML Scripting
-- Front-End Development
+- FrontEnd Development
 - firebase
 - firestore DB
 - realtime db
@@ -150,6 +179,7 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - influx db
 - rest api
 - Tailscale
+- Electron
 
 ## Languages, Frameworks & Core Tools
 - C++
@@ -167,11 +197,20 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Qt / Qt Libraries
 - Ubuntu
 - JetBrains Rider
-- Object-Oriented Programming (OOP)
+- Object Oriented Programming (OOP)
 - Linux
 - GitHub
 - SSH tunneling
 - n8n
+- MATLAB
+- Java
+- C#
+- AWS
+- GCP
+- Cisco Packet Tracer
+- Cron
+- Bash Scripting
+- State Machines
 
 ## Innovation, Strategy & Other
 - Networking
@@ -202,6 +241,12 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Entrepreneurship Education
 - Analytical Skills
 - Business Development
+- Creative
+- Innovative Thinker
+- Agile Contributor
+- Persistent & Determined
+- Community Oriented
+- Supportive & Collaborative Leader
 
 ## Hardware & Engineering
 - PCB Design
@@ -212,3 +257,4 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Biomedical
 - Agri
 - Agriculture
+- wireshark

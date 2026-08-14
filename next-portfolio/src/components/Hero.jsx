@@ -1,7 +1,8 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaYoutube, FaInstagram, FaWhatsapp, FaPhone } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 import Tilt from 'react-parallax-tilt';
 import './Hero.css';
 
@@ -39,7 +40,7 @@ const Hero = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.7, duration: 0.8 }}
                     >
-                        Embedded Engineer <span className="highlight">&</span> AI Specialist
+                        Embedded <span className="highlight">&</span> AI Engineer
                     </motion.h2>
                     <motion.p 
                         className="description"
@@ -57,12 +58,23 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1.1, duration: 0.8 }}
                     >
-                        <a href="#projects" className="btn-primary">View My Work</a>
-                        <a href="https://github.com/SathvikKunuru" target="_blank" rel="noreferrer" className="btn-icon">
+                        <a href="https://github.com/SathvikKunuru" target="_blank" rel="noreferrer" className="btn-icon github">
                             <FaGithub />
                         </a>
-                        <a href="https://linkedin.com/in/sathvik-kunuru" target="_blank" rel="noreferrer" className="btn-icon">
+                        <a href="https://linkedin.com/in/sathvik-kunuru" target="_blank" rel="noreferrer" className="btn-icon linkedin">
                             <FaLinkedinIn />
+                        </a>
+                        <a href="https://www.youtube.com/@sathvik_kunuru" target="_blank" rel="noreferrer" className="btn-icon youtube">
+                            <FaYoutube />
+                        </a>
+                        <a href="https://www.instagram.com/sathvik_kunuru/" target="_blank" rel="noreferrer" className="btn-icon instagram">
+                            <FaInstagram />
+                        </a>
+                        <a href="https://wa.me/917569438573?text=hellooo+Sathvik%2C+here+from+your+Planet%21&utm_source=chatgpt.com" target="_blank" rel="noreferrer" className="btn-icon whatsapp">
+                            <FaWhatsapp />
+                        </a>
+                        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=thekunurusathvik@gmail.com" target="_blank" rel="noreferrer" className="btn-icon gmail">
+                            <SiGmail />
                         </a>
                     </motion.div>
                 </motion.div>

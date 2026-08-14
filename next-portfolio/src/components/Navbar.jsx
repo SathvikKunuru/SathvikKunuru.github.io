@@ -30,10 +30,11 @@ const Navbar = () => {
                 
                 <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
                     <li><a href="#home" onClick={toggleMenu}>Origin</a></li>
-                    <li><a href="#projects" onClick={toggleMenu}>Masterpieces</a></li>
+                    <li><a href="#skills" onClick={toggleMenu}>Neural Net</a></li>
+                    <li><a href="#projects" onClick={toggleMenu}>Builds</a></li>
                     <li><a href="#experience" onClick={toggleMenu}>Odyssey</a></li>
                 </ul>
-                <a href="#contact" className="btn-primary nav-cta">Transmit Signal</a>
+                <a href="#contact" className="nav-glitch-text nav-cta">[ Connect.. ]</a>
                 
                 <div className="hamburger" onClick={toggleMenu}>
                     <FaBars />

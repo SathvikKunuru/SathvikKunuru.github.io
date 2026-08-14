@@ -1,53 +1,162 @@
-.contact-box {
-    text-align: center;
-    max-width: 700px;
+.terminal-card {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 60px 40px;
+    background: rgba(5, 8, 16, 0.8);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.05), inset 0 0 20px rgba(139, 92, 246, 0.05);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
 }
 
-.contact-box h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: var(--text-primary);
+.terminal-header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+    position: relative;
 }
 
-.contact-box p {
-    color: var(--text-secondary);
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-buttons span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.terminal-buttons .close { background: #ff5f56; box-shadow: 0 0 5px #ff5f56; }
+.terminal-buttons .minimize { background: #ffbd2e; box-shadow: 0 0 5px #ffbd2e; }
+.terminal-buttons .maximize { background: #27c93f; box-shadow: 0 0 5px #27c93f; }
+
+.terminal-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: monospace;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.terminal-body {
+    padding: 40px;
+}
+
+.glitch-text {
+    font-size: 2rem;
+    font-family: monospace;
+    color: var(--accent-cyan);
+    margin-bottom: 30px;
+    text-align: left;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    position: relative;
+    display: inline-block;
+}
+
+.terminal-logs {
+    font-family: monospace;
+    color: #39ff14; /* hacker green */
+    text-align: left;
     margin-bottom: 40px;
+    min-height: 80px;
 }
 
-.contact-info {
+.typewriter-text {
+    margin: 5px 0;
+    line-height: 1.5;
+    text-shadow: 0 0 5px rgba(57, 255, 20, 0.4);
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.terminal-input-area {
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+}
+
+.input-prompt {
+    font-family: monospace;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.prompt-user { color: #39ff14; }
+.prompt-colon { color: #ffffff; }
+.prompt-path { color: #00e5ff; }
+.prompt-char { color: #ffffff; margin-left: 5px; }
+
+.terminal-textarea {
+    width: 100%;
+    min-height: 120px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #e2e8f0;
+    font-family: monospace;
+    font-size: 1rem;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.terminal-textarea::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.terminal-endpoints {
+    text-align: left;
     margin-bottom: 40px;
-    align-items: center;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(255,255,255,0.1);
 }
 
-.contact-item {
+.endpoints-label {
+    font-family: monospace;
+    color: var(--accent-purple);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.terminal-action {
     display: flex;
-    align-items: center;
-    gap: 15px;
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    transition: var(--transition);
+    justify-content: flex-end;
+    margin-top: 20px;
 }
 
-.contact-item svg {
-    color: var(--accent-cyan);
-    font-size: 1.3rem;
-}
 
-.contact-item:hover {
-    color: var(--text-primary);
-}
-
-.mt-4 {
-    margin-top: 1.5rem;
-}
 
 @media (max-width: 768px) {
-    .contact-box h2 {
-        font-size: 2rem;
+    .terminal-body {
+        padding: 20px;
+    }
+    
+    .glitch-text {
+        font-size: 1.5rem;
+    }
+    
+    .terminal-input-area {
+        margin-bottom: 20px;
+    }
+    
+    .terminal-action {
+        justify-content: center;
     }
 }

@@ -7,6 +7,82 @@ import './Skills.css';
 
 export const skillsData = [
     {
+        category: "Embedded",
+        tags: [
+            "I2C",
+            "SPI",
+            "UART",
+            "CAN",
+            "MQTT",
+            "LoRa",
+            "Microcontrollers",
+            "Sensors",
+            "IoT",
+            "SCADA",
+            "LiDAR",
+            "IMU",
+            "Optics",
+            "Wearables",
+            "Health",
+            "PLC",
+            "ST7540",
+            "Communication",
+            "STM32",
+            "STM32U575VIT6Q",
+            "ESP",
+            "ESP8266",
+            "ESP32",
+            "Raspberry Pi",
+            "RPi",
+            "DWM1000",
+            "UWB (Ultra-Wideband)",
+            "RS-232 / Serial Port",
+            "Ethernet / LAN",
+            "IBR117 Board",
+            "Embedded Linux",
+            "Device Tree (DTS)",
+            "Hardware Interface",
+            "Internet Protocol Suite (TCP/IP)",
+            "User Datagram Protocol (UDP)",
+            "Embedded Devices",
+            "PLC Programming",
+            "Programmable Logic Controller (PLC)",
+            "SIMATIC STEP 7",
+            "PLC Ladder Logic",
+            "Yocto Project",
+            "TinyOS",
+            "TinyML",
+            "Microprocessors",
+            "Arduino IDE",
+            "Embedded C",
+            "Electronics",
+            "Electronic Circuits",
+            "Hardware Design",
+            "Hardware Hacking",
+            "Electronics Technology",
+            "Modbus",
+            "WiFi",
+            "TCP/UDP",
+            "ARM Cortex",
+            "Bootloaders",
+            "BitBake",
+            "Poky",
+            "Precision Agriculture",
+            "USB Automation",
+            "Zephyr RTOS",
+            "RAK",
+            "RS485",
+            "Industrial Automation",
+            "Low Power Wireless Communication",
+            "SBCs",
+            "Firmware",
+            "RTOS",
+            "OTA Updates",
+            "LT8491",
+            "MPPT"
+        ]
+    },
+    {
         category: "AI",
         tags: [
             "YOLO",
@@ -23,7 +99,7 @@ export const skillsData = [
             "Hugging Face",
             "LLaMA / LLaMA 2",
             "NLP (Natural Language Processing)",
-            "Fine-tuning",
+            "Fine tuning",
             "Instruction Tuning",
             "AutoTrain Advanced",
             "Hinglish / Translation",
@@ -42,10 +118,10 @@ export const skillsData = [
             "TensorFlow",
             "Machine Learning",
             "XGBoost",
-            "Real-Time Inference",
+            "Real Time Inference",
             "Large Language Models",
             "Agentic AI Pipelines",
-            "Multi-Agent Architecture",
+            "Multi Agent Architecture",
             "Sequential Pipelines",
             "Parallel Execution",
             "Conditional Workflows",
@@ -54,7 +130,7 @@ export const skillsData = [
             "Holographic Memory",
             "Pipeline Resilience",
             "Model Drift Prevention",
-            "Self-Improving Pipelines",
+            "Self Improving Pipelines",
             "Toolchain Integration",
             "Idempotent Operations",
             "Batch Processing",
@@ -64,7 +140,25 @@ export const skillsData = [
             "Hermes AI",
             "openclaw",
             "ollama",
-            "vllm"
+            "vllm",
+            "Neural Networks",
+            "Edge Computing",
+            "RCNN",
+            "Detectron2",
+            "UNet",
+            "Inception",
+            "Predictive Maintenance",
+            "Inference Latency",
+            "Data Analysis",
+            "Matplotlib",
+            "Labeling Automation",
+            "Object Detection",
+            "Real Time Processing",
+            "Face Embeddings",
+            "BitsAndBytes",
+            "Tokenization",
+            "Gemma 2B",
+            "Vector Embeddings"
         ]
     },
     {
@@ -86,9 +180,9 @@ export const skillsData = [
             "Visual Web Developer",
             "Web Application Development",
             "Web Projects",
-            "Back-End Web Development",
+            "BackEnd Web Development",
             "HTML Scripting",
-            "Front-End Development",
+            "FrontEnd Development",
             "firebase",
             "firestore DB",
             "realtime db",
@@ -96,7 +190,8 @@ export const skillsData = [
             "google auth",
             "influx db",
             "rest api",
-            "Tailscale"
+            "Tailscale",
+            "Electron"
         ]
     },
     {
@@ -117,11 +212,20 @@ export const skillsData = [
             "Qt / Qt Libraries",
             "Ubuntu",
             "JetBrains Rider",
-            "Object-Oriented Programming (OOP)",
+            "Object Oriented Programming (OOP)",
             "Linux",
             "GitHub",
             "SSH tunneling",
-            "n8n"
+            "n8n",
+            "MATLAB",
+            "Java",
+            "C#",
+            "AWS",
+            "GCP",
+            "Cisco Packet Tracer",
+            "Cron",
+            "Bash Scripting",
+            "State Machines"
         ]
     },
     {
@@ -155,6 +259,17 @@ export const skillsData = [
             "Entrepreneurship Education",
             "Analytical Skills",
             "Business Development",
+            "Creative",
+            "Innovative Thinker",
+            "Agile Contributor",
+            "Persistent & Determined",
+            "Community Oriented",
+            "Supportive & Collaborative Leader"
+        ]
+    },
+    {
+        category: "Embedded",
+        tags: [
             "PCB Design",
             "Altium",
             "KiCad",
@@ -162,7 +277,8 @@ export const skillsData = [
             "Robotics",
             "Biomedical",
             "Agri",
-            "Agriculture"
+            "Agriculture",
+            "wireshark"
         ]
     },
 ];
@@ -231,7 +347,7 @@ const Skills = () => {
                     <AnimatePresence mode="popLayout">
                         {filteredSkills.map((skill, idx) => (
                             <motion.div 
-                                key={skill.title}
+                                key={skill.category}
                                 layout
                                 variants={cardVariants}
                                 initial="hidden"
@@ -265,7 +381,7 @@ const Skills = () => {
                                     >
                                         <div className="skill-category glass-card super-glow">
                                             <div className="skill-icon">{skill.icon}</div>
-                                            <h3>{skill.title}</h3>
+                                            <h3>{skill.category}</h3>
                                             <p>{skill.description}</p>
                                             <div className="tags">
                                                 {skill.tags.map((tag, i) => (
