@@ -11,7 +11,7 @@ This is the source code for my personal portfolio website!
 If you like the design and want to use it for yourself, it's super easy:
 1. **Fork this repository** (Click the "Fork" button in the top right of GitHub).
 2. Name your new repository `[yourgithubusername].github.io`.
-3. Copy the massive prompt below and paste it into your favorite AI agent (like Cursor, GitHub Copilot, or Gemini). It will clone your new repo and customize it for you!
+3. Copy the massive prompt below and paste it into your favorite AI agent. It will clone your new repo and customize it for you!
 
 ### 🤖 Give this prompt to your Agent:
 
