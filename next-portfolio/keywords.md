@@ -21,9 +21,13 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - PLC
 - ST7540
 - Communication
-- STM32 / STM32U575VIT6Q
-- ESP / ESP8266 / ESP32
-- Raspberry Pi (RPi)
+- STM32
+- STM32U575VIT6Q
+- ESP
+- ESP8266
+- ESP32
+- Raspberry Pi
+- RPi
 - DWM1000
 - UWB (Ultra-Wideband)
 - RS-232 / Serial Port
@@ -50,15 +54,15 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Hardware Design
 - Hardware Hacking
 - Electronics Technology
-- **[RESUME]** Modbus
-- **[RESUME]** Wi-Fi
-- **[RESUME]** TCP/UDP
-- **[RESUME]** ARM Cortex
-- **[RESUME]** Bootloaders
-- **[RESUME]** BitBake
-- **[RESUME]** Poky
-- **[RESUME]** Precision Agriculture
-- **[RESUME]** USB Automation
+- Modbus
+- Wi-Fi
+- TCP/UDP
+- ARM Cortex
+- Bootloaders
+- BitBake
+- Poky
+- Precision Agriculture
+- USB Automation
 
 ## AI & Machine Learning
 - YOLO
@@ -93,25 +97,30 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Pandas (Software)
 - TensorFlow
 - Machine Learning
-- **[RESUME]** XGBoost
-- **[RESUME]** Real-Time Inference
-- **[RESUME]** Large Language Models
-- **[AGENTIC]** Agentic AI Pipelines
-- **[AGENTIC]** Multi-Agent Architecture
-- **[AGENTIC]** Sequential Pipelines
-- **[AGENTIC]** Parallel Execution
-- **[AGENTIC]** Conditional Workflows
-- **[AGENTIC]** Feedback Loops
-- **[AGENTIC]** Context Management
-- **[AGENTIC]** Holographic Memory
-- **[AGENTIC]** Pipeline Resilience
-- **[AGENTIC]** Model Drift Prevention
-- **[AGENTIC]** Self-Improving Pipelines
-- **[AGENTIC]** Toolchain Integration
-- **[AGENTIC]** Idempotent Operations
-- **[AGENTIC]** Batch Processing
-- **[AGENTIC]** Monitoring & Observability
-- **[AGENTIC]** Orchestration Patterns
+- XGBoost
+- Real-Time Inference
+- Large Language Models
+- Agentic AI Pipelines
+- Multi-Agent Architecture
+- Sequential Pipelines
+- Parallel Execution
+- Conditional Workflows
+- Feedback Loops
+- Context Management
+- Holographic Memory
+- Pipeline Resilience
+- Model Drift Prevention
+- Self-Improving Pipelines
+- Toolchain Integration
+- Idempotent Operations
+- Batch Processing
+- Monitoring
+- Observability
+- Orchestration Patterns
+- Hermes AI
+- openclaw
+- ollama
+- vllm
 
 ## Web Apps & Software
 - Next.js
@@ -133,6 +142,14 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Back-End Web Development
 - HTML Scripting
 - Front-End Development
+- firebase
+- firestore DB
+- realtime db
+- web development
+- google auth
+- influx db
+- rest api
+- Tailscale
 
 ## Languages, Frameworks & Core Tools
 - C++
@@ -153,8 +170,8 @@ Here is the finalized master list of keywords after scraping your **GitHub**, **
 - Object-Oriented Programming (OOP)
 - Linux
 - GitHub
-- **[RESUME]** SSH tunneling
-- **[RESUME]** n8n
+- SSH tunneling
+- n8n
 
 ## Innovation, Strategy & Other
 - Networking

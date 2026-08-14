@@ -181,7 +181,7 @@ const SkillsGraph = () => {
                         <FaSearch className="jarvis-icon" />
                         <input 
                             type="text" 
-                            placeholder="look for what you want..." 
+                            placeholder="look Into the Sathvik's Planet..." 
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             className="jarvis-input"

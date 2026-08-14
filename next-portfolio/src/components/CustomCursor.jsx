@@ -35,8 +35,10 @@ const CustomCursor = () => {
             if (
                 target.tagName.toLowerCase() === 'a' ||
                 target.tagName.toLowerCase() === 'button' ||
+                target.tagName.toLowerCase() === 'input' ||
                 target.closest('.glass-card') ||
-                target.closest('.nav-links a')
+                target.closest('.nav-links a') ||
+                target.closest('.jarvis-search-box')
             ) {
                 setIsHovering(true);
             } else {
@@ -113,11 +115,54 @@ const CustomCursor = () => {
                     <circle cx="50" cy="55" r="3" fill="#06b6d4" />
                     <circle cx="80" cy="50" r="3" fill="#06b6d4" />
 
-                    {/* Glass Cockpit Dome */}
-                    <path d="M 25 45 Q 50 5 75 45 Z" fill="url(#glassGrad)" stroke="#a78bfa" strokeWidth="2"/>
-                    
-                    {/* Alien Silhouette */}
-                    <circle cx="50" cy="35" r="8" fill="#1f2937" opacity="0.8"/>
+                    {/* The Alien inside the dome (Normal Silhouette) */}
+                    <motion.circle 
+                        cx="50" cy="35" r="8" fill="#1f2937" 
+                        animate={{ opacity: isHovering ? 0 : 0.8 }} 
+                    />
+
+                    {/* Hovering Alien - Pops up and mashes a red button */}
+                    <motion.g
+                        initial={{ opacity: 0, y: 15 }}
+                        animate={{ opacity: isHovering ? 1 : 0, y: isHovering ? 0 : 15 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    >
+                        {/* Green Alien Head */}
+                        <ellipse cx="50" cy="30" rx="8" ry="7" fill="#39ff14" />
+                        {/* Eyes */}
+                        <ellipse cx="46" cy="29" rx="2" ry="3" fill="#000" transform="rotate(-25 46 29)" />
+                        <ellipse cx="54" cy="29" rx="2" ry="3" fill="#000" transform="rotate(25 54 29)" />
+                        
+                        {/* Control Console */}
+                        <rect x="42" y="37" width="16" height="8" rx="2" fill="#374151" stroke="#1f2937" strokeWidth="1" />
+                        
+                        {/* Red Button (Animates down) */}
+                        <motion.rect 
+                            x="46" y="35" width="8" height="4" rx="1" fill="#ef4444" 
+                            animate={{ y: isHovering ? [35, 37, 35] : 35 }}
+                            transition={{ repeat: Infinity, duration: 0.4, ease: "easeInOut" }}
+                        />
+
+                        {/* Alien Arm smashing the button */}
+                        <motion.path 
+                            d="M 56 34 Q 52 30 50 35" 
+                            fill="none" stroke="#39ff14" strokeWidth="2.5" strokeLinecap="round"
+                            animate={{ d: isHovering ? ["M 56 34 Q 52 30 50 35", "M 56 34 Q 52 30 50 37", "M 56 34 Q 52 30 50 35"] : "M 56 34 Q 52 30 50 35" }}
+                            transition={{ repeat: Infinity, duration: 0.4, ease: "easeInOut" }}
+                        />
+                    </motion.g>
+
+                    {/* Glass Cockpit Dome (Flies open when hovering) */}
+                    <motion.path 
+                        d="M 25 45 Q 50 5 75 45 Z" 
+                        fill="url(#glassGrad)" stroke="#a78bfa" strokeWidth="2"
+                        animate={{ 
+                            y: isHovering ? -20 : 0,
+                            opacity: isHovering ? 0 : 1,
+                            scale: isHovering ? 0.5 : 1
+                        }}
+                        transition={{ duration: 0.3 }}
+                    />
                 </svg>
             </motion.div>
         </>

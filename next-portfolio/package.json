@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync-keywords": "node scripts/update_keywords.js"
   },
   "dependencies": {
     "framer-motion": "^13.1.0",
