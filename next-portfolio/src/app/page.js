@@ -22,8 +22,16 @@ export default function Home() {
       </main>
       
       <footer>
-        <div className="container footer-content" style={{ display: 'flex', justifyContent: 'space-between', padding: '30px 20px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+        <div className="container footer-content" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '30px 20px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
           <p style={{ color: 'var(--text-muted)' }}>&copy; 2026 Sathvik Kunuru. All rights reserved.</p>
+          <a 
+            href="https://github.com/SathvikKunuru/SathvikKunuru.github.io#want-to-make-your-own-steal-it-" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ color: 'var(--primary-color)', textDecoration: 'none', fontWeight: 'bold' }}
+          >
+            Want to make your own? Steal it! 🛸
+          </a>
         </div>
       </footer>
     </div>
