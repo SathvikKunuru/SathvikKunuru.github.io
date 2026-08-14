@@ -1,58 +1,41 @@
-# 🚀 Sathvik Kunuru | Next-Gen Developer Portfolio
+# Helloooo! 👋
 
-Welcome to my personal slice of the internet! 🌌 
-This repository contains the source code for my highly interactive, 3D-animated, and hyper-modern portfolio website built with **Next.js 15**, **React**, and **Framer Motion**. 
+This is the source code for my personal portfolio website! 
 
-✨ **Check out the live site here:** [https://SathvikKunuru.github.io](https://SathvikKunuru.github.io) ✨
-
----
-
-## 🛸 Want this portfolio for yourself? Steal it with AI! 
-
-I've built this portfolio to be easily customizable. Since we are in the era of AI, you don't even need to manually edit the code to make it your own! 
-
-### 🤖 The 1-Click AI Customization Guide
-
-**Step 1: Fork the Repository**
-Click that shiny **Fork** button at the top right of this page to copy this code into your own GitHub account.
-
-**Step 2: Unleash Your AI Agent**
-Open the repository in your favorite AI coding assistant (like Cursor, GitHub Copilot, or Gemini).
-
-**Step 3: Copy & Paste This Prompt**
-Just give your AI agent the following prompt, fill in your details, and watch it rewrite the entire portfolio for you!
-
-```text
-Hey Agent! I just forked this Next.js portfolio and I want to make it mine. 
-Please scan the components in `next-portfolio/src/components/` (specifically Hero.jsx, Projects.jsx, Experience.jsx, and Contact.jsx) and replace all of Sathvik Kunuru's information with my own.
-
-Here are my details:
-- Name: [Your Name]
-- Title: [Your Job Title]
-- Tagline: [A short sentence about what you do]
-- GitHub URL: [Your GitHub Link]
-- LinkedIn URL: [Your LinkedIn Link]
-- About Me: [A short paragraph about your skills and goals]
-
-Also, I have placed a picture of myself in `next-portfolio/public/profile.png`. Please make sure the Hero section and favicon use this image. 
-
-Finally, please remove the `basePath` from `next.config.mjs` if it exists, and help me push the code to my repo!
-```
-
-**Step 4: Go Live on GitHub Pages!**
-Deploying is fully automated. 
-1. Go to your repository **Settings** -> **Pages**.
-2. Under **Build and deployment**, change the Source dropdown to **GitHub Actions**.
-3. *Boom!* 💥 GitHub will automatically build and publish your new site!
+✨ **Have a look at it live right here:** [https://SathvikKunuru.github.io](https://SathvikKunuru.github.io) ✨
 
 ---
 
-## 💻 Tech Stack
-- **Framework:** Next.js 15 (App Router)
-- **Styling:** Custom CSS with Glassmorphism & Cyberpunk glow effects
-- **Animations:** Framer Motion & React Parallax Tilt
-- **Deployment:** GitHub Actions -> GitHub Pages
+## Want to make your own? Steal it! 🛸
 
-> *"Bridging the gap between hardware and intelligent software."* 🤖⚡
+If you like the design and want to use it for yourself, it's super easy. Just copy the massive prompt below and paste it into your favorite AI agent (like Cursor, GitHub Copilot, or Gemini). It will do all the heavy lifting to clone the codebase and customize it for you!
 
-Feel free to star ⭐ this repository if you found it useful!
+### 🤖 Give this prompt to your Agent:
+
+> Hey Agent! I want to build my own portfolio website based on an awesome template. 
+> 
+> Please perform the following actions sequentially:
+> 
+> **1. CLONE THE REPOSITORY:**
+> Please clone the template repository from this exact URL:
+> `https://github.com/SathvikKunuru/SathvikKunuru.github.io.git`
+> 
+> **2. SWAP ALL PERSONAL INFORMATION:**
+> Scan the components in `next-portfolio/src/components/` (specifically `Hero.jsx`, `Projects.jsx`, `Experience.jsx`, and `Contact.jsx`) and replace all of Sathvik Kunuru's information with my own. 
+> 
+> Here are my details:
+> - Name: [Your Name]
+> - Title: [Your Job Title]
+> - Tagline: [A short sentence about what you do]
+> - GitHub URL: [Your GitHub Link]
+> - LinkedIn URL: [Your LinkedIn Link]
+> - About Me: [A short paragraph about your skills and goals]
+> 
+> **3. UPDATE THE PROFILE PICTURE:**
+> I have placed a picture of myself in `next-portfolio/public/profile.png`. Please make sure the Hero section and favicon use this image. (Note: The template natively forces a circular crop via CSS, so just make sure the image is linked correctly!).
+> 
+> **4. CONFIGURE FOR GITHUB PAGES:**
+> Check `next.config.mjs`. If I am deploying to a root domain (e.g. `[myusername].github.io`), ensure that `basePath` and `assetPrefix` are completely removed. If I am deploying to a subpath (e.g. `[myusername].github.io/portfolio`), ensure the `basePath` is set correctly.
+> 
+> **5. PUSH AND DEPLOY:**
+> Finally, help me initialize a new git repository for this code, commit the changes, and push it to my own GitHub account. Walk me through activating GitHub Actions so my new portfolio goes live immediately!
