@@ -71,3 +71,27 @@
         transform: translateX(100%);
     }
 }
+
+@media (max-width: 768px) {
+    .jarvis-search-box {
+        max-width: 90%;
+        padding: 8px 20px;
+    }
+    .jarvis-input {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .jarvis-search-box {
+        max-width: 95%;
+        padding: 6px 15px;
+    }
+    .jarvis-icon {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+    .jarvis-input {
+        font-size: 0.9rem;
+    }
+}

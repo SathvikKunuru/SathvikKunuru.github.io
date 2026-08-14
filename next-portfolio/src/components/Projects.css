@@ -16,6 +16,16 @@
     }
 }
 
+@media (max-width: 480px) {
+    .filter-btn {
+        padding: 6px 15px;
+        font-size: 0.85rem;
+    }
+    .filter-tabs {
+        gap: 10px;
+    }
+}
+
 .filter-tabs {
     display: flex;
     justify-content: center;

@@ -327,3 +327,13 @@ ul {
         height: 2px;
     }
 }
+
+@media (max-width: 480px) {
+    :root {
+        --section-pad: 40px 10px;
+    }
+
+    .animated-heading {
+        font-size: 1.6rem;
+    }
+}
