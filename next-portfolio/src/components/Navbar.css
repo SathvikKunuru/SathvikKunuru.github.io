@@ -58,11 +58,20 @@
     cursor: pointer;
 }
 
+.nav-cta-mobile {
+    display: none;
+}
+
 @media (max-width: 992px) {
     .nav-cta {
         display: none;
     }
+    .nav-cta-mobile {
+        display: inline-block;
+    }
 }
+
+
 
 @media (max-width: 768px) {
     .hamburger {
@@ -100,6 +109,15 @@
 
 @media (max-width: 480px) {
     .logo {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
+        letter-spacing: -0.5px;
+    }
+    .nav-cta-mobile {
+        display: inline-block;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+    .nav-brand-container {
+        gap: 8px !important;
     }
 }

@@ -24,19 +24,25 @@ export default function Home() {
         <Contact />
       </main>
       
-      <footer>
-        <div className="container footer-content" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '30px 20px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-          <p style={{ color: 'var(--text-muted)' }}>&copy; 2026 Sathvik Kunuru. All rights reserved.</p>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '8px' }}>
+      <footer className="footer-section">
+        <div className="container footer-content">
+          <div className="footer-left">
+            <p>&copy; {new Date().getFullYear()} Sathvik Kunuru.</p>
+            <p className="terminal-text">SYS.STATUS: [ <span className="highlight-green">ONLINE</span> ]</p>
+          </div>
+          
+          <div className="footer-right">
             <a 
               href="https://github.com/SathvikKunuru/SathvikKunuru.github.io#want-to-make-your-own-steal-it-" 
               target="_blank" 
               rel="noopener noreferrer"
-              style={{ color: 'var(--primary-color)', textDecoration: 'none', fontWeight: 'bold' }}
+              className="glitch-link"
             >
-              Want to make your own? Steal it! 🛸
+              [ STEAL_THIS_THEME ] 🛸
             </a>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontStyle: 'italic', margin: 0 }}>Theme inspired by <a href="https://playdead.com/games/inside/" target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary-color)', textDecoration: 'none'}}>INSIDE by Playdead</a></p>
+            <p className="inspiration">
+              Visuals inspired by <a href="https://playdead.com/games/inside/" target="_blank" rel="noopener noreferrer" className="glitch-link">INSIDE</a>
+            </p>
           </div>
         </div>
       </footer>

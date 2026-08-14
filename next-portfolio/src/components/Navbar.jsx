@@ -26,7 +26,10 @@ const Navbar = () => {
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
         >
             <div className="nav-container">
-                <a href="#home" className="logo">Sathvik Kunuru<span>.</span></a>
+                <div className="nav-brand-container" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                    <a href="#home" className="logo">Sathvik Kunuru<span>.</span></a>
+                    <a href="#contact" className="nav-glitch-text nav-cta-mobile">[ Connect.. ]</a>
+                </div>
                 
                 <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
                     <li><a href="#home" onClick={toggleMenu}>Origin</a></li>
