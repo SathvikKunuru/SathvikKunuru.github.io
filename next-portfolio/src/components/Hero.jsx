@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
 import './Hero.css';
 
-const profileImg = '/profile.jpg';
+const profileImg = '/profile.png';
 
 const Hero = () => {
     return (
@@ -85,7 +85,7 @@ const Hero = () => {
                         glareColor="var(--accent-cyan)"
                         glarePosition="all"
                     >
-                        <div className="profile-image-container glass-card">
+                        <div className="profile-image-container">
                             <img src={profileImg} alt="Sathvik Kunuru" className="profile-image" />
                         </div>
                     </Tilt>

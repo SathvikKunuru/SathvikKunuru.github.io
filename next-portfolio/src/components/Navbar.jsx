@@ -1,4 +1,4 @@
-`"use client`";
+"use client";
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll } from 'framer-motion';
 import { FaBars } from 'react-icons/fa';
@@ -6,6 +6,7 @@ import './Navbar.css';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     
     useEffect(() => {
         const handleScroll = () => {
@@ -15,6 +16,8 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const toggleMenu = () => setIsOpen(!isOpen);
+
     return (
         <motion.nav 
             className={`navbar ${scrolled ? 'scrolled' : ''}`}
@@ -23,15 +26,16 @@ const Navbar = () => {
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
         >
             <div className="nav-container">
-                <a href="#home" className="logo">Sathvik<span>.</span></a>
-                <ul className="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                <a href="#home" className="logo">Sathvik Kunuru<span>.</span></a>
+                
+                <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+                    <li><a href="#home" onClick={toggleMenu}>Origin</a></li>
+                    <li><a href="#projects" onClick={toggleMenu}>Masterpieces</a></li>
+                    <li><a href="#experience" onClick={toggleMenu}>Odyssey</a></li>
                 </ul>
-                <a href="#contact" className="btn-primary nav-cta">Let's Talk</a>
-                <div className="hamburger">
+                <a href="#contact" className="btn-primary nav-cta">Transmit Signal</a>
+                
+                <div className="hamburger" onClick={toggleMenu}>
                     <FaBars />
                 </div>
             </div>

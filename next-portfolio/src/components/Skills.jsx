@@ -1,7 +1,7 @@
-`"use client`";
+"use client";
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaMicrochip, FaBrain, FaCode, FaTools, FaLaptopCode, FaProjectDiagram } from 'react-icons/fa';
+import { FaMicrochip, FaBrain, FaCode, FaTools, FaLaptopCode, FaProjectDiagram, FaMobileAlt } from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
 import './Skills.css';
 
@@ -28,6 +28,13 @@ const skillsData = [
         tags: ["React.js", "Next.js", "Node.js", "Tailwind"]
     },
     {
+        category: "Apps",
+        icon: <FaMobileAlt />,
+        title: "App Development",
+        description: "Cross-platform mobile application development for iOS and Android.",
+        tags: ["React Native", "Flutter", "Mobile UI"]
+    },
+    {
         category: "Other",
         icon: <FaCode />,
         title: "General Programming",
@@ -50,6 +57,26 @@ const skillsData = [
     }
 ];
 
+const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: { staggerChildren: 0.12 }
+    }
+};
+
+const cardVariants = {
+    hidden: { opacity: 0, y: 100, scale: 0.5, rotateY: 30 },
+    show: { 
+        opacity: 1, 
+        y: 0, 
+        scale: 1, 
+        rotateY: 0,
+        transition: { type: "spring", stiffness: 120, damping: 10 }
+    },
+    exit: { opacity: 0, scale: 0.5, transition: { duration: 0.2 } }
+};
+
 const Skills = () => {
     const [filter, setFilter] = useState('All');
 
@@ -59,22 +86,19 @@ const Skills = () => {
         return false;
     });
 
-    const filterTabs = ['All', 'AI', 'Embedded', 'Web Apps', 'Other'];
+    const filterTabs = ['All', 'AI', 'Embedded', 'Apps', 'Web Apps', 'Other'];
 
     return (
         <section id="skills" className="section">
             <div className="container">
-                <motion.div 
-                    className="section-header"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                >
-                    <h2>Technical Arsenal</h2>
-                    <div className="line"></div>
-                </motion.div>
 
-                <div className="filter-tabs">
+                <motion.div 
+                    className="filter-tabs"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2, type: "spring" }}
+                >
                     {filterTabs.map(tab => (
                         <button 
                             key={tab}
@@ -84,44 +108,63 @@ const Skills = () => {
                             {tab}
                         </button>
                     ))}
-                </div>
+                </motion.div>
 
-                <motion.div layout className="skills-grid">
-                    <AnimatePresence>
-                        {filteredSkills.map((skill) => (
+                <motion.div 
+                    layout 
+                    className="skills-grid"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, margin: "-100px" }}
+                >
+                    <AnimatePresence mode="popLayout">
+                        {filteredSkills.map((skill, idx) => (
                             <motion.div 
                                 key={skill.title}
                                 layout
-                                initial={{ opacity: 0, y: 30 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, scale: 0.8 }}
-                                transition={{ duration: 0.4 }}
+                                variants={cardVariants}
+                                initial="hidden"
+                                animate="show"
+                                exit="exit"
+                                custom={idx}
                                 style={{ height: '100%' }}
                             >
-                                <Tilt
-                                    className="tilt-container"
-                                    tiltMaxAngleX={15} 
-                                    tiltMaxAngleY={15} 
-                                    perspective={1000} 
-                                    transitionSpeed={1500} 
-                                    scale={1.05}
-                                    glareEnable={true}
-                                    glareMaxOpacity={0.15}
-                                    glareColor="white"
-                                    glarePosition="all"
+                                <motion.div
+                                    animate={{ y: [0, -12, 0] }}
+                                    transition={{ 
+                                        duration: 3, 
+                                        repeat: Infinity, 
+                                        ease: "easeInOut",
+                                        delay: idx * 0.15 
+                                    }}
                                     style={{ height: '100%' }}
                                 >
-                                    <div className="skill-category glass-card">
-                                        <div className="skill-icon">{skill.icon}</div>
-                                        <h3>{skill.title}</h3>
-                                        <p>{skill.description}</p>
-                                        <div className="tags">
-                                            {skill.tags.map((tag, i) => (
-                                                <span key={i}>{tag}</span>
-                                            ))}
+                                    <Tilt
+                                        className="tilt-container"
+                                        tiltMaxAngleX={20} 
+                                        tiltMaxAngleY={20} 
+                                        perspective={1000} 
+                                        transitionSpeed={1000} 
+                                        scale={1.1}
+                                        glareEnable={true}
+                                        glareMaxOpacity={0.4}
+                                        glareColor="var(--accent-purple)"
+                                        glarePosition="all"
+                                        style={{ height: '100%' }}
+                                    >
+                                        <div className="skill-category glass-card super-glow">
+                                            <div className="skill-icon">{skill.icon}</div>
+                                            <h3>{skill.title}</h3>
+                                            <p>{skill.description}</p>
+                                            <div className="tags">
+                                                {skill.tags.map((tag, i) => (
+                                                    <span key={i}>{tag}</span>
+                                                ))}
+                                            </div>
                                         </div>
-                                    </div>
-                                </Tilt>
+                                    </Tilt>
+                                </motion.div>
                             </motion.div>
                         ))}
                     </AnimatePresence>

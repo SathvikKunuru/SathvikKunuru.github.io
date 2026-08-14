@@ -1,4 +1,4 @@
-`"use client`";
+"use client";
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaLeaf, FaBug, FaUserCheck, FaRobot, FaTrain, FaGlobe, FaMicrochip, FaMobileAlt, FaRocket } from 'react-icons/fa';
@@ -37,10 +37,10 @@ const projectsData = [
     },
     {
         title: "Smart Irrigation App",
-        category: "Web Apps",
+        category: "Apps",
         icon: <FaMobileAlt />,
-        description: "A responsive dashboard to monitor soil moisture and control water pumps remotely via mobile or desktop.",
-        tech: ["React", "Node.js", "MongoDB"]
+        description: "A responsive cross-platform mobile application to monitor soil moisture and control water pumps remotely.",
+        tech: ["React Native", "Node.js", "MongoDB"]
     },
     {
         title: "Chlorophyll Estimation",
@@ -72,6 +72,32 @@ const projectsData = [
     }
 ];
 
+const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.15
+        }
+    }
+};
+
+const cardVariants = {
+    hidden: { opacity: 0, y: 50, scale: 0.8, rotateX: -20 },
+    show: { 
+        opacity: 1, 
+        y: 0, 
+        scale: 1, 
+        rotateX: 0,
+        transition: { 
+            type: "spring", 
+            stiffness: 100, 
+            damping: 12 
+        }
+    },
+    exit: { opacity: 0, scale: 0.5, transition: { duration: 0.2 } }
+};
+
 const Projects = () => {
     const [filter, setFilter] = useState('All');
 
@@ -81,22 +107,29 @@ const Projects = () => {
         return false;
     });
 
-    const filterTabs = ['All', 'AI', 'Embedded', 'Web Apps', 'Other'];
+    const filterTabs = ['All', 'AI', 'Embedded', 'Apps', 'Web Apps', 'Other'];
 
     return (
         <section id="projects" className="section">
             <div className="container">
                 <motion.div 
                     className="section-header"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, scale: 0.5, y: 50 }}
+                    whileInView={{ opacity: 1, scale: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
+                    transition={{ type: "spring", stiffness: 200, damping: 20 }}
                 >
-                    <h2>Featured & Active Projects</h2>
+                    <h2 className="animated-heading">Masterpiece Projects</h2>
                     <div className="line"></div>
                 </motion.div>
 
-                <div className="filter-tabs">
+                <motion.div 
+                    className="filter-tabs"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2, type: "spring" }}
+                >
                     {filterTabs.map(tab => (
                         <button 
                             key={tab}
@@ -106,51 +139,71 @@ const Projects = () => {
                             {tab}
                         </button>
                     ))}
-                </div>
+                </motion.div>
 
-                <motion.div layout className="projects-grid">
-                    <AnimatePresence>
-                        {filteredProjects.map((project) => (
+                <motion.div 
+                    layout 
+                    className="projects-grid"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, margin: "-100px" }}
+                >
+                    <AnimatePresence mode="popLayout">
+                        {filteredProjects.map((project, idx) => (
                             <motion.div 
                                 key={project.title}
                                 layout
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                exit={{ opacity: 0, scale: 0.8 }}
-                                transition={{ duration: 0.4 }}
+                                variants={cardVariants}
+                                initial="hidden"
+                                animate="show"
+                                exit="exit"
+                                custom={idx}
                                 style={{ height: '100%' }}
                             >
-                                <Tilt 
-                                    className="tilt-container"
-                                    tiltMaxAngleX={10} 
-                                    tiltMaxAngleY={10} 
-                                    perspective={1000} 
-                                    transitionSpeed={1500} 
-                                    scale={1.02}
-                                    glareEnable={true}
-                                    glareMaxOpacity={0.15}
-                                    glareColor="white"
-                                    glarePosition="all"
+                                {/* Adding a continuous subtle float animation */}
+                                <motion.div
+                                    animate={{ y: [0, -10, 0] }}
+                                    transition={{ 
+                                        duration: 4, 
+                                        repeat: Infinity, 
+                                        ease: "easeInOut",
+                                        delay: idx * 0.2 
+                                    }}
                                     style={{ height: '100%' }}
                                 >
-                                    <div className="project-card glass-card">
-                                        <div className="project-content">
-                                            <div className="project-top">
-                                                <div className="project-icon">{project.icon}</div>
-                                                <div className="project-links">
-                                                    <FiExternalLink />
+                                    <Tilt 
+                                        className="tilt-container"
+                                        tiltMaxAngleX={15} 
+                                        tiltMaxAngleY={15} 
+                                        perspective={1000} 
+                                        transitionSpeed={1000} 
+                                        scale={1.05}
+                                        glareEnable={true}
+                                        glareMaxOpacity={0.4}
+                                        glareColor="var(--accent-cyan)"
+                                        glarePosition="all"
+                                        style={{ height: '100%' }}
+                                    >
+                                        <div className="project-card glass-card super-glow">
+                                            <div className="project-content">
+                                                <div className="project-top">
+                                                    <div className="project-icon">{project.icon}</div>
+                                                    <div className="project-links">
+                                                        <FiExternalLink />
+                                                    </div>
                                                 </div>
+                                                <h3>{project.title}</h3>
+                                                <p>{project.description}</p>
+                                                <ul className="project-tech">
+                                                    {project.tech.map((t, i) => (
+                                                        <li key={i}>{t}</li>
+                                                    ))}
+                                                </ul>
                                             </div>
-                                            <h3>{project.title}</h3>
-                                            <p>{project.description}</p>
-                                            <ul className="project-tech">
-                                                {project.tech.map((t, i) => (
-                                                    <li key={i}>{t}</li>
-                                                ))}
-                                            </ul>
                                         </div>
-                                    </div>
-                                </Tilt>
+                                    </Tilt>
+                                </motion.div>
                             </motion.div>
                         ))}
                     </AnimatePresence>
