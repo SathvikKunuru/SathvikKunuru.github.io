@@ -1,8 +1,9 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedinIn, FaYoutube, FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import { SiGmail } from 'react-icons/si';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedinIn, FaYoutube, FaInstagram, FaWhatsapp, FaReddit } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { SiGmail, SiHuggingface } from 'react-icons/si';
 import './Contact.css';
 
 const Contact = () => {
@@ -111,6 +112,15 @@ const Contact = () => {
                                 </a>
                                 <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=thekunurusathvik@gmail.com" target="_blank" rel="noreferrer" className="btn-icon gmail" style={{ fontSize: '1.5rem' }}>
                                     <SiGmail />
+                                </a>
+                                <a href="https://huggingface.co/Sathvik-24" target="_blank" rel="noreferrer" className="btn-icon huggingface" style={{ fontSize: '1.5rem' }}>
+                                    <SiHuggingface />
+                                </a>
+                                <a href="https://www.reddit.com/user/Prestigious-Bit1/" target="_blank" rel="noreferrer" className="btn-icon reddit" style={{ fontSize: '1.5rem' }}>
+                                    <FaReddit />
+                                </a>
+                                <a href="https://x.com/Sathvik2404" target="_blank" rel="noreferrer" className="btn-icon x" style={{ fontSize: '1.5rem' }}>
+                                    <FaXTwitter />
                                 </a>
                             </div>
                         </div>

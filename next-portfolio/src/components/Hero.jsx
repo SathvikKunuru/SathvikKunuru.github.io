@@ -1,8 +1,9 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedinIn, FaYoutube, FaInstagram, FaWhatsapp, FaPhone } from 'react-icons/fa';
-import { SiGmail } from 'react-icons/si';
+import { FaGithub, FaLinkedinIn, FaYoutube, FaInstagram, FaWhatsapp, FaPhone, FaReddit } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { SiGmail, SiHuggingface } from 'react-icons/si';
 import Tilt from 'react-parallax-tilt';
 import './Hero.css';
 
@@ -75,6 +76,15 @@ const Hero = () => {
                         </a>
                         <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=thekunurusathvik@gmail.com" target="_blank" rel="noreferrer" className="btn-icon gmail">
                             <SiGmail />
+                        </a>
+                        <a href="https://huggingface.co/Sathvik-24" target="_blank" rel="noreferrer" className="btn-icon huggingface">
+                            <SiHuggingface />
+                        </a>
+                        <a href="https://www.reddit.com/user/Prestigious-Bit1/" target="_blank" rel="noreferrer" className="btn-icon reddit">
+                            <FaReddit />
+                        </a>
+                        <a href="https://x.com/Sathvik2404" target="_blank" rel="noreferrer" className="btn-icon x">
+                            <FaXTwitter />
                         </a>
                     </motion.div>
                 </motion.div>
